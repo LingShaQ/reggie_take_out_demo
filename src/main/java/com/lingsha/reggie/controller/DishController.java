@@ -28,6 +28,7 @@ import java.util.stream.Collectors;
 @Slf4j
 public class DishController {
 
+
     @Autowired
     private DishFlavorService dishFlavorService;
     @Autowired
@@ -146,8 +147,6 @@ public class DishController {
             return dishDto;
         }).collect(Collectors.toList());
 
-        System.out.println("haha");
-       log.info("成功");
 
         return R.success(dishDtos);
     }
