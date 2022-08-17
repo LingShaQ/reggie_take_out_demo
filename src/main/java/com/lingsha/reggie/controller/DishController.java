@@ -147,6 +147,7 @@ public class DishController {
         }).collect(Collectors.toList());
 
         System.out.println("haha");
+       log.info("成功");
 
         return R.success(dishDtos);
     }
