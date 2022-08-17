@@ -146,6 +146,7 @@ public class DishController {
             return dishDto;
         }).collect(Collectors.toList());
 
+        System.out.println("haha");
 
         return R.success(dishDtos);
     }
